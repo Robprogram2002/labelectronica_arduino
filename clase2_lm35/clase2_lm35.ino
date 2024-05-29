@@ -17,7 +17,9 @@ void loop() {
   Serial.println(voltaje);
   delay(20);
   
-  analogWrite(Led, voltaje);
-  delay(50);
+  if(temperatura > 27.0) {
+  	digitalWrite(Led, HIGH);
+  }else{
+  	digitalWrite(Led, LOW);
+  }
 }
-
