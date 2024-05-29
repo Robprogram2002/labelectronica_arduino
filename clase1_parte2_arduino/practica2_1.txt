@@ -7,6 +7,6 @@ void setup() {
 
 void loop() {
   int lectura = analogRead(potenciometro)/4; // 0-255
-  digitalWrite(led, lectura);
+  analogWrite(led, lectura);
   delay(200);
 }
