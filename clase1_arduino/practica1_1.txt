@@ -1,6 +1,6 @@
 int led = 2;
 
-void setpup() {
+void setup() {
   pinMode(led, OUTPUT);
 }
 
