@@ -15,6 +15,8 @@ void loop() {
     lcd.print(" seg.");             // imprime a continuacion segundos
   }
 
+  lcd.clear();
+
   for (i = 0; i < 5; i++) {
     lcd.setCursor(0, 0);           // ubica cursor en columna 0 y linea 0
     lcd.print("Alarma activa !");  // escribe texto
@@ -23,6 +25,8 @@ void loop() {
     lcd.noDisplay();               // oculta el texto
     delay(500);                    // demora de medio segundo
   }
+
+  lcd.clear();
 
   for (i = 0; i < 5; i++) {
     lcd.setCursor(0, 0);          // ubica cursor en columna 0 y fila 0
@@ -34,10 +38,14 @@ void loop() {
     delay(500);                   // demora de medio segundo
   }
 
+  lcd.clear();
+
   for (i = 0; i < 5; i++) {
     lcd.setCursor(2, 0);         // ubica cursor en columna 2 y linea 0
     lcd.print("Prueba scroll");  // escribe texto
     lcd.scrollDisplayLeft();     // funcion que desplaza de a un caracter por vez hacia la izquierda
     delay(1000);                 // demora de un segundo
   }
+
+  lcd.clear();
 }
